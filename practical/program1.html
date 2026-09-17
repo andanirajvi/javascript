@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical</title>
+</head>
+
+<body>
+    <script>
+        let num = Math.floor(Math.random() * 100) + 1;
+        let correct = false;
+        let count = 1;
+
+        while (count <= 9) {
+            let guess = Number(
+                prompt(`Attempt ${count} of 9\nGuess a number between 1 and 100:`)
+            );
+
+            if (guess == num) {
+                alert("Correct Number");
+                correct = true;
+                break;
+            }
+            else if (guess > num) {
+                alert("Too High");
+            }
+            else if (guess < num) {
+                alert("Too Low");
+            }
+            else {
+                alert("Enter Valid Number");
+            }
+
+            count++;
+        }
+
+        if (correct == false) {
+            alert("Game Over! Correct number was " + num);
+        }
+    </script>
+</body>
+
+</html>
