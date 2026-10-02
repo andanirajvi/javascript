@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bg {
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    padding: 10px 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#btn1 {
+    left: 10px;
+}
+
+#btn2 {
+    right: 10px;
+}
