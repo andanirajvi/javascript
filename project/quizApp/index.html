@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Quiz</h1>
+
+
+    <div id="startScreen" class="start-box">
+        <h2>Welcome to Quiz</h2>
+
+        <input type="text" id="username" placeholder="Enter Username" >
+
+        <br><br>
+
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+
+    <div id="quizScreen" style="display: none;">
+
+        <div class="score">
+            <h3>Score</h3>
+            <p>
+                Correct: <span id="correct">0</span><br>
+                Incorrect: <span id="incorrect">0</span>
+            </p>
+        </div>
+
+
+        <div class="timer">
+            <h3>Timer</h3>
+            <h2 id="time">10</h2>
+        </div>
+
+        <div class="quiz-box">
+            <h3 id="questionNo">Question 1</h3>
+
+            <p id="question"></p>
+
+            <div id="options"></div>
+
+            <button id="nextBtn" onclick="nextQuestion()">
+                Next
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

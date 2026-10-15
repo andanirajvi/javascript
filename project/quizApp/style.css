@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.start-box {
+    background-color: white;
+    border: 2px solid blue;
+    width: 350px;
+    max-width: calc(100% - 60px);
+    margin: 100px auto;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+#username {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+/* Score Box */
+.score {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    width: 110px;
+    padding: 15px 0;
+}
+
+.score h3,
+.timer h3 {
+    margin-top: 15px;
+}
+
+/* Timer Box */
+.timer {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    width: 82px;
+    padding: 15px 0;
+}
+
+/* Quiz Box */
+.quiz-box {
+    background-color: white;
+    border: 2px solid blue;
+    width: 600px;
+    max-width: calc(100% - 40px);
+    margin: 55px auto;
+    padding: 20px 25px;
+    box-sizing: border-box;
+}
+
+#question {
+    margin-top: 20px;
+}
+
+#options {
+    text-align: left;
+    margin: 25px 10px;
+}
+
+#options label {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#options input {
+    cursor: pointer;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
