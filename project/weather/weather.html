@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left-panel">
+
+        <div class="logo">
+            <i class="fa-solid fa-cloud-sun"></i>
+            WeatherInfo
+        </div>
+
+        <div class="weather-bottom">
+
+            <h1 id="temperature">--°</h1>
+
+            <div class="city-info">
+                <h2 id="cityName">Search City</h2>
+                <p id="dateTime">Current Weather</p>
+            </div>
+
+            <div class="weather-status">
+                <i class="fa-solid fa-cloud-sun" id="weatherIcon"></i>
+                <p id="description">Weather</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Right Panel -->
+
+    <div class="right-panel">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search Location..."
+            >
+
+            <button onclick="getWeather()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <div id="weatherResult"></div>
+
+        <ul class="cities">
+
+            <li onclick="searchCity('Ahmedabad')">Ahmedabad</li>
+            <li onclick="searchCity('Jamnagar')">Jamnagar</li>
+            <li onclick="searchCity('Surat')">Surat</li>
+            <li onclick="searchCity('Vadodara')">Vadodara</li>
+
+        </ul>
+
+        <hr>
+
+        <div class="details">
+
+            <h3>Weather Details</h3>
+
+            <div class="row">
+                <span>Feels Like</span>
+                <span id="feelsLike">-- °C</span>
+            </div>
+
+            <div class="row">
+                <span>Humidity</span>
+                <span id="humidity">-- %</span>
+            </div>
+
+            <div class="row">
+                <span>Wind Speed</span>
+                <span id="wind">-- km/h</span>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            Weather App
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
